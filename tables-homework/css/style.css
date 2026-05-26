@@ -21,7 +21,7 @@ caption{
     border-collapse: collapse;
     border-bottom: 0;
 }
-tr td:nth-child(n+6){
+tr:nth-child(n+6){
     color: red;
 }
 .first-num{
