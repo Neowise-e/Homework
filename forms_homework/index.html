@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form">
+      <fieldset class="form-group">
+        <h2>Ваши личные данные</h2>
+        <label for="username">Ваше имя</label>
+        <input
+          id="username"
+          class="personal-data"
+          type="text"
+          placeholder="Ваше имя"
+          required
+        />
+
+        <label for="age">Ваш возраст</label>
+        <input id="age" class="personal-data" type="number" placeholder="Введите возраст" required/>
+
+        <label for="tel">Ваш номер телефона</label>
+        <input id="tel" class="personal-data" type="tel" placeholder="+7-999-999-99-99" required />
+        <label for="email">Ваша почта</label>
+        <input id="email" class="personal-data" type="email" placeholder="example@gmail.com" required/>
+        <label for="user-message">Сообщение</label>
+        <textarea id="user-message" class="personal-data" name="user-message" placeholder="Ваше сообщение" required></textarea>
+        <label for="checkbox"
+          ><input id="checkbox" class="checkbox" type="checkbox" required/>Я принимаю
+          правила</label
+        >
+        <button type="submit">Отправить</button>
+        <a href="./meme.jpg">Пасхалка</a>
+      </fieldset>
+    </form>
+  </body>
+</html>
