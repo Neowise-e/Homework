@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.logo{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+nav{
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 25px;
+    border-bottom: 1px black solid;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link-wrapper{
+    display: flex;
+    gap: 30px;
+}
+.nav-link{
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+}
