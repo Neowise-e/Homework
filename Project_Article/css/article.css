@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 0;
+}
+p{
+  margin: 20px 0;
+}
+.article {
+  padding: 80px 0 120px 0;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.article-title {
+  max-width: 596px;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+.article-main{
+  font-family: Ubuntu;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  margin-bottom: 20px;
+}
+.article-main-img{
+  position: relative;
+  margin: 80px 0;
+}
+
+.deco-svg-1{
+  left: -350px;
+  top: 100px;
+}
+.deco-svg-2{
+  right: -350px;
+  bottom: 100px;
+}
+.article-classes{
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color:#2c332f
+}
+.article-classes-description{
+  max-width: 744px;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.article-classes-list{
+  max-width: 179px;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color:#535755;
+  margin-left: 20px;
+  margin-bottom: 80px;
+  padding: 0;
+}
+.classes-list-item{
+  margin-bottom: 12px;
+}
+.classes-list-item::marker{
+  color: #3596ed;
+  font-size: 1.3em;
+}
+.new-spot-overview{
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color:#2c332f
+}
+.new-spot-video{
+  position: relative;
+  margin: 40px 0;
+}
+.new-spot-invite{
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.article-main-img-1::before{
+  position: absolute;
+  z-index: -1;
+  top: 120px;
+  left: -350px;
+  content: url("../img/deco.svg");
+}
+.article-main-img-2::after{
+  position: absolute;
+  z-index: -1;
+  bottom: 120px;
+  right: -350px;
+  content: url("../img/deco.svg");
+}
