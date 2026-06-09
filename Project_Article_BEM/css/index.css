@@ -1,0 +1,166 @@
+.hero {
+  padding-top: 80px;
+  position: relative;
+}
+.hero__container {
+  display: flex;
+  gap: 28px;
+}
+.hero::after{
+  bottom: 106px;
+  width: 100%;
+}
+
+.hero__info {
+  max-width: 492px;
+}
+.hero__title {
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+.hero__title-accent {
+  color: #3596ed;
+}
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 140px;
+  max-width: 440px;
+}
+.hero__images {
+  position: relative;
+  display: flex;
+}
+.hero__images-choose {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 161px;
+  border: 1px solid #535755;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.hero__images-man{
+  width: 353;
+}
+.news__container {
+  display: flex;
+  gap: 28px;
+}
+.news__article {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 25%;
+  overflow: hidden;
+  max-width: 284px;
+  background-color: #fff;
+  border: 1px solid #d3cbd9;
+}
+.news__article-image {
+  display: block;
+}
+.news__info {
+  padding: 20px 20px 0;
+  margin-bottom: 12px;
+}
+.news__article footer {
+  padding: 0 20px 20px;
+  margin-top: auto;
+}
+.time {
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #6a696977;
+  margin-bottom: 8px;
+}
+.news__link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+  transition: opacity 200ms;
+}
+.news__link::after {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 9px;
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  transition: transform 200ms;
+}
+.news__link:hover::after {
+  transform: translateX(8px);
+}
+.news__link:hover {
+  opacity: 0.5;
+}
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+  cursor: pointer;
+  list-style: none;
+}
+summary::after {
+  display: inline-block;
+  flex-shrink: 0;
+  content: "";
+  width: 17px;
+  height: 22px;
+  background: url("../img/accordeon-arrow.svg") no-repeat center;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+details {
+  margin-bottom: 20px;
+  border-block: 1px solid #d3cbd9;
+}
+details > p {
+  margin: 0;
+  padding: 0 20px 20px;
+}
+.faq__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+.faq__section {
+  position: relative;
+}
+.faq__section::before{
+  top: 215px;
+}
+
+
+/* .news {
+  display: none;
+}
+.faq {
+  display: none;
+} */
