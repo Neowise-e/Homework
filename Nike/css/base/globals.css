@@ -64,6 +64,13 @@ button:focus-visible {
 .text-light {
   font-weight: 300;
 }
+.characteristics__card-description {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 140%;
+  color: var(--main-color);
+}
 
 @media (width > 576px) {
   .section {

@@ -9,6 +9,7 @@
   --disabled-color: #5d5d56;
   --disabled-shadow-color: #5d5d564d;
   --shadow-color: #181817;
+  --overlay-color: #2a2a2980;
 
   /* font-family */
   --font-family: Montserrat;
@@ -18,9 +19,12 @@
   --container-padding: 15px;
 
   /* shadows */
-  --shadow-glow:0 0 10px 4px var(--main-shadow-color);
-  --shadow-accent-glow:0 0 10px 4px var(--accent-shadow-color);
-  --shadow-disabled-glow:0 0 10px 4px var(--disabled-shadow-color);
+  --shadow-glow: 0 0 10px 4px var(--main-shadow-color);
+  --shadow-accent-glow: 0 0 10px 4px var(--accent-shadow-color);
+  --shadow-disabled-glow: 0 0 10px 4px var(--disabled-shadow-color);
+  --card-border-shadow:
+    0 0 35px 10px var(--accent-shadow-color),
+    inset 0 0 35px 10px var(--accent-shadow-color);
 
   /* transitions */
   --transition-time: 0.35s;

@@ -3,8 +3,7 @@
   border: 2px solid var(--accent-color);
   border-radius: 12px;
   box-shadow:
-    0 0 35px 10px var(--accent-shadow-color),
-    inset 0 0 35px 10px var(--accent-shadow-color);
+    var(--card-border-shadow);
   z-index: 0;
 }
 @media (width > 768px) {
