@@ -1,0 +1,36 @@
+:root {
+  /* Colors */
+  --main-color: #ffffff;
+  --main-shadow-color: #ffffff39;
+  --accent-color: #ffea00;
+  --accent-shadow-color: #ffea002e;
+  --bg-color: #2a2a29;
+  --secondary-color: #c9c69b;
+  --disabled-color: #5d5d56;
+  --disabled-shadow-color: #5d5d564d;
+  --shadow-color: #181817;
+  --overlay-color: #2a2a2980;
+
+  /* font-family */
+  --font-family: Montserrat;
+
+  /* container properties */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  /* shadows */
+  --shadow-glow: 0 0 10px 4px var(--main-shadow-color);
+  --shadow-accent-glow: 0 0 10px 4px var(--accent-shadow-color);
+  --shadow-disabled-glow: 0 0 10px 4px var(--disabled-shadow-color);
+  --card-border-shadow:
+    0 0 35px 10px var(--accent-shadow-color),
+    inset 0 0 35px 10px var(--accent-shadow-color);
+
+  /* transitions */
+  --transition-time: 0.35s;
+  /* layers */
+  --layer-negative: -1;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}
