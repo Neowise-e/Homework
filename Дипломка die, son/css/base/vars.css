@@ -1,0 +1,21 @@
+:root {
+  /* Fonts */
+  --font-family: OpenSans;
+  --second-family: NAMU;
+  /* Colors */
+  --secondary-color: #111111;
+  --main-color: #ffffff;
+  --even-bg-color: #f8f8f8;
+  --accent-color: #c5358c;
+  --disabled-color: #ababab;
+  --hero-section-color: #dddddd;
+  --available-color: #68ae5c;
+  --not-available-color: #dc5b5b;
+  --hero-bg-color: #dddddd;
+
+  /* btns&header colors */
+  --header-color: var(--secondary-color);
+  --button-hover-color: #c93c91;
+  /* container */
+  --container-width: 1360px;
+}

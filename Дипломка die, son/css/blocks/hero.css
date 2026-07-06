@@ -1,0 +1,108 @@
+.hero {
+  background-color: var(--hero-bg-color);
+  position: relative;
+  overflow: hidden;
+  /* background-image: url("../../images/hero-img.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain; */
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/hero-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  right: -430px;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+}
+@media (width <=1250px) {
+  .hero::after {
+    right: -240px;
+  }
+}
+@media (width <= 768px) {
+  .hero::after {
+    right: -150px;
+  }
+}
+@media (width <=576px) {
+  .hero::after {
+    top: 50px;
+    right: -110px;
+  }
+}
+.hero__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: clamp(24.5rem, 17.552rem + 29.64vw, 53.125rem);
+
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex: 0 1 90%;
+  align-items: flex-start;
+  max-width: clamp(18.125rem, 14.09rem + 17.22vw, 34.75rem);
+  z-index: 2;
+  gap: 40px;
+  word-break: normal;
+}
+@media (width <= 768px) {
+  .hero__container{
+    align-items: flex-start;
+  }
+  .hero__info {
+    margin-top: 80px;
+    gap: 20px;
+  }
+}
+@media (width <= 576px) {
+  .hero__info {
+    margin-top: 40px;
+    gap: 16px;
+  }
+}
+.hero__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: clamp(24px, 0.911rem + 1.64vw, 46px);
+  line-height: 103%;
+  color: var(--secondary-color);
+  text-align: left;
+  min-width: 290px;
+}
+.hero__info .text__l {
+    max-width: 253px;
+  }
+.hero__more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 10px 20px;
+  width: clamp(141px, 4.896rem + 8.16vw, 235px);
+  height: clamp(36px, 1.083rem + 2.43vw, 64px);
+  background-color: var(--accent-color);
+  margin-top: clamp(16px, -0.089rem + 2.68vw, 50px);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(16px, 0.786rem + 0.6vw, 24px);
+  color: #fff;
+}
+@media (width <= 768px) {
+  .hero__info .text__l {
+    max-width: 250px;
+  }
+}
+@media (width <= 576px) {
+  .hero__info .text__l {
+    max-width: 170px;
+  }
+}
