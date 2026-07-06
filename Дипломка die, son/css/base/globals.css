@@ -1,0 +1,31 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  min-width: 375px;
+  max-height: 200vh;
+}
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+.title__l {
+  font-family: var(--second-family);
+
+  font-size: 48px;
+  text-align: center;
+}
+.title__s {
+  font-family: var(--second-family);
+
+  font-size: 20px;
+  text-align: center;
+}
+.text__l {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(12px, 0.167rem + 1.22vw, 26px);
+  line-height: 130%;
+  color: var(--secondary-color);
+}
