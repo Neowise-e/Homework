@@ -1,0 +1,97 @@
+.specials__dropdown {
+  position: relative;
+}
+.specials__dropdown-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.dropdown__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+  padding: 8px 25px;
+  max-width: 279px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  transition: color var(--transition-time);
+  font-weight: 400;
+}
+.dropdown__arrow {
+  stroke: var(--secondary-color);
+  fill: var(--secondary-color);
+  transition: var(--transition-time);
+}
+.dropdown__sort-menu {
+  display: none;
+  gap: 7px;
+  max-width: 273px;
+  max-height: 100%;
+  border-radius: 3px;
+  background-color: var(--main-color);
+  box-shadow: var(--item-shadow);
+}
+.dropdown__sort-menu--open {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.dropdown__sort-item {
+  position: relative;
+  width: 100%;
+  max-height: 40px;
+  padding: 8px 25px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: color var(--transition-time);
+}
+.dropdown__sort-item:last-child {
+  padding: 5px 25px;
+  border: none;
+}
+.dropdown__sort-item--active {
+  font-size: clamp(12px, 0.5rem + 0.52vw, 18px);
+}
+.dropdown__sort-item--active::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/chosen.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 10px;
+  top: 50%;
+  right: 0;
+  transform: translate(-150%, -50%);
+}
+
+@media (any-hover: hover) {
+  .dropdown__sort-item:hover {
+    color: var(--accent-color);
+  }
+  .dropdown__button:hover {
+    color: var(--accent-color);
+  }
+  .dropdown__button:hover .dropdown__arrow {
+    stroke: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+@media (width <= 768px) {
+  .dropdown__button {
+    min-height: 30px;
+    padding: 0 15px;
+  }
+  .specials__dropdown-wrapper{
+    margin-bottom: 20px;
+  }
+}
+@media (width <= 576px){
+  .specials__dropdown-wrapper{
+    margin-bottom: 30px;
+  }
+}
