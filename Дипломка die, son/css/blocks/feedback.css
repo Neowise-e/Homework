@@ -1,0 +1,139 @@
+.feedback {
+  background-color: var(--even-bg-color);
+}
+.feedback__form {
+  display: flex;
+  justify-content: space-between;
+  gap: 135px;
+}
+.form__container {
+  flex-basis: 50%;
+}
+.fieldset {
+  border: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 0;
+}
+.form__contact-title,
+.form__subscribe-title {
+  margin-bottom: 30px;
+  text-wrap: nowrap;
+}
+.input {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 15px 0;
+}
+.input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(12px, 0.5rem + 0.52vw, 18px);
+  color: var(--disabled-color);
+}
+.form__button {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  padding: 15px 42px;
+  color: var(--main-color);
+  margin-top: 70px;
+    transition: var(--transition-time);
+}
+.form__subscribe-actions {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 35px;
+}
+.form__agreement {
+  display: flex;
+
+  flex-direction: column;
+
+}
+.form__agreement-checkbox {
+  position: relative;
+  appearance: none;
+  border: none;
+}
+.form__agreement-checkbox::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form__agreement-checkbox:focus-visible {
+  outline: none;
+}
+.form__agreement-checkbox:focus-visible::before {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 2px;
+}
+.form__agreement-text {
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: clamp(10px, 0.464rem + 0.45vw, 16px);
+  line-height: 120%;
+}
+.form__agreement-checkbox:checked::before {
+  background: url("../../icons/checked.svg") no-repeat center;
+}
+@media (width <= 1320px) {
+  .feedback__form {
+    gap: 50px;
+  }
+}
+@media (width <= 768px) {
+  .fieldset{
+    gap: 0;
+  }
+  .feedback__form {
+    gap: 20px;
+  }
+  .form__contact-title,
+.form__subscribe-title{
+  margin-bottom: 10px;
+}
+  .form__agreement-checkbox::before {
+    width: 19px;
+    height: 19px;
+}
+.form__agreement-checkbox:checked::before{
+  background: url("../../icons/checked-mobile.svg") no-repeat center;
+}
+.form__agreement-text{
+  padding-left: 25px;
+}
+.form__button{
+  padding: 7px 26px;
+  margin-top: 47px;
+}
+}
+@media (width <= 576px){
+  .feedback__container{
+    padding: 0;
+  }
+  .feedback__form{
+    flex-direction: column;
+    gap: 46px;
+  }
+  .form__button{
+  padding: 8px 26px;
+  margin-top: 35px;
+}
+.form__subscribe-actions{
+  gap: 16px;
+}
+}
+
+
+@media (any-hover: hover){
+  .form__button:hover{
+    background-color: var(--accent-color);
+  }
+}
