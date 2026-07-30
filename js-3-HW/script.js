@@ -21,12 +21,23 @@ console.log(factorial); //Пришлось подглядывать в инет�
 
 //=====================ЗАДАЧА 3============
 
-let line = "";
+let tag = "";
 
-for (let i = 1; i <= 4; i++) {
-  for (let j = 4; j >= 1; j--) {
-    line += "# "
+
+for (let k = 0; k < 4; k++){
+for (let i = 0; i < 1; i++) {
+  for (let j = 0; j <= 3; j++) {
+    tag += " O X";
   }
-  line += "\n"
+  tag += "\n"
 }
-console.log(line);
+for (let i = 0; i < 1; i++){
+  for (let j = 0; j <= 3; j++){
+    tag += " X O"
+  }
+  tag += "\n"
+}
+}
+
+
+console.log(tag);
