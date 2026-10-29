@@ -1,0 +1,59 @@
+.opinion {
+  background-color: var(--even-bg-color);
+    position: relative;
+    overflow: hidden;
+
+}
+
+@media (width > 1250px) {
+  .opinion__container::after {
+    content: url("../../images/opinion-image.png");
+    position: absolute;
+    /* right: 650px; */
+    right: clamp(5vw, 50vw - 420px, 26vw);
+    bottom: 0;
+    width: calc(200px + 15%);
+    height: calc(100% - 125px);
+
+  }
+}
+
+.opinion__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 50%;
+}
+.opinion__title {
+  position: relative;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+.opinion__text {
+  position: relative;
+  z-index: 2;
+  max-width: 670px;
+  margin-bottom: 20px;
+}
+@media (width <= 1250px) {
+  .opinion__info-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding-inline: 70px;
+  }
+  .opinion__text {
+    max-width: 100%;
+  }
+    .opinion{
+        padding-block: 100px;
+  }
+}
+@media (width <= 576px) {
+  .opinion__container{
+    padding: 0;
+  }
+  .opinion__info-wrapper {
+    padding-inline: 0px;
+  }
+}
